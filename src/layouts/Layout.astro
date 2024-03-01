@@ -48,6 +48,28 @@ const { title } = Astro.props;
         margin: 0;
         padding: 0;
     }
+    span{
+        color: #969696;
+        display:flex;
+        align-items: center;
+        gap: .25rem;
+        font-size: .85rem;
+        letter-spacing: -0.05rem;
+      }
+      
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 4px;
+    }
+    time{
+        color: #666;
+        font-size: 0.85rem;
+        
+    }
+
     *,
     *::before,
     *::after {
@@ -77,10 +99,11 @@ const { title } = Astro.props;
         line-height: 1.5;
         margin: 0;
         text-wrap: pretty; /* NO SOPORTADO POR TODOS LOS NAVEGADORES, PERO RESULTA UTIL */
-		
+		    margin-bottom: 1em;
 	}
     .dark{
-    background: #1c003a;
+    /*background: #1c003a;*/
+    background-color:#001f15 ;
     }
   .dark h1,
   .dark h2,
@@ -100,7 +123,8 @@ const { title } = Astro.props;
 
   .dark span,
   .dark time {
-    color: #38bdf8;
+    /*color: #38bdf8;*/
+    color: #7fffd4;
   }
 
   @media print {
