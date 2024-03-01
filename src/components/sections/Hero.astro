@@ -1,0 +1,109 @@
+
+---
+import {basics} from '@cv'
+import Section from '@/components/Section.astro'
+
+const {name,label,image,email,phone,location,summary} = basics
+const {city,region,} = location
+
+---
+
+<Section>
+    <div class="container">
+      <div class="info">
+        <h1>{name}</h1>
+        <h2>{label}</h2>
+        <span>
+          <!-- icono -->
+          {city},{region}
+        </span>
+        <footer>
+          {
+          email && (
+          <a
+            href={`mailto:${email}`}
+            title={`Enviar un correo electronico a ${name} al correo ${email}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            📧 <!-- icono -->
+          </a>
+          )
+        }
+        {
+          phone && (
+          <a
+            href={`tel:${phone}`}
+            title={`Llamar por telefono${name} al numero ${email}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            📞 <!-- icono -->
+          </a>
+          )
+        }
+        </footer>
+      </div>
+      <figure>
+        <img src={image} alt={name}/> 
+      </figure>
+    </div>
+</Section>
+<style>
+    .container{
+      display:flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      }
+      h1{
+        font-size: 2rem;
+      }
+      h2{
+        color:#444;
+        font-weight: 500;
+        font-size: 1.1rem;
+        text-wrap: balance;
+      }
+      img{
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      width:128px;
+      border-radius: 6px;
+      }
+      span{
+        color: #666;
+        display:flex;
+        align-items: center;
+        gap: .25rem;
+        font-size: .85rem;
+        letter-spacing: -0.05rem;
+      }
+      .info{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        padding-right: 32px ;
+      }
+      footer{
+       display: flex;
+       gap: 4px;
+       margin-top: 8px;
+      }
+      footer a{
+        color: #777;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #eee;
+        padding: 4px;
+        height: 32px;
+        width: 32px;
+        border-radius: 6px;
+        transition: all .3s ease;
+      }
+      footer a:hover{
+       background: #eee; 
+      }
+</style>
