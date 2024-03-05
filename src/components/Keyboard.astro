@@ -2,6 +2,7 @@
 import { basics } from "@cv";
 const { profiles } = basics;
 
+
 const SOCIAL_ICONS: Record<string, string> = {
   GitHub: `
     <svg
@@ -43,14 +44,34 @@ const profilesInfo = profiles.map(({ network, url }) => {
 });
 ---
 
-
-<footer
+<footer id="normal-footer" 
   class="animate-fadeIn scroll-smooth hidden print:hidden text-xs bg-[#fdfdfd] border border-[#eee] sm:block fixed bottom-0 w-full py-1 px-4 text-center"
 >
   Pulsa <kbd class="bg-[#eee] rounded py-[2px] px-1 text-xs">Ctrl</kbd> + <kbd
     class="bg-[#eee] rounded py-[2px] px-1 text-xs">K</kbd
   > para abrir la paleta de comandos.
 </footer>
+<!-- CODIGO BOTON -->
+<div id="footer-button" class="no-print">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="icon icon-tabler icon-tabler-command"
+    width="32"
+    height="32"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="#777"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+    <path
+      d="M7 9a2 2 0 1 1 2 -2v10a2 2 0 1 1 -2 -2h10a2 2 0 1 1 -2 2v-10a2 2 0 1 1 2 2h-10"
+    ></path>
+  </svg>
+</div>
+<!-- CODIGO BOTON -->
 
 <ninja-keys
   openHotkey="ctrl+K"
@@ -128,8 +149,23 @@ const profilesInfo = profiles.map(({ network, url }) => {
       ...data,
     ];
   }
-</script>
+  const footerButton = document.getElementById("footer-button")
+  footerButton?.addEventListener("click", () => {
+    var event = new KeyboardEvent("keydown", {
+      key: "K",
+      code: "KeyK",
+      keyCode: 75,
+      which: 75,
+      ctrlKey: true,
+      altKey: false,
+      shiftKey: false,
+      metaKey: false
+    })
 
+    document.dispatchEvent(event)
+  })
+
+</script>
 <style>
   @media print {
     ninja-keys {
@@ -142,11 +178,44 @@ const profilesInfo = profiles.map(({ network, url }) => {
       --ninja-width: 300px;
     }
   }
+  @media (min-width: 601px) {
+    #normal-footer {
+      display: block;
+    }
+    #footer-button {
+      display: none;
+    }
+  }
 
   footer {
     view-timeline-name: --revealing;
     view-timeline-axis: block;
     animation-timeline: --revealing;
     animation-range: entry 100% cover 10%;
+    text-align: center;
+    background: aquamarine;
+    margin: 10%;
+    border-radius: 10px;
+    padding: .5em;
+  }
+  @media (max-width: 600px) {
+    #normal-footer {
+      display: none;
+    }
+
+    #footer-button {
+      background: #fff;
+      position: fixed;
+      border: 1px solid #eee;
+      right: 10px;
+      bottom: 10px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
   }
 </style>
