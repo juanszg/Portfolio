@@ -2,9 +2,16 @@
 ---
 import {basics} from '@cv'
 import Section from '@/components/Section.astro'
+import LinkedIn from '../icons/LinkedIn.astro'
+import GitHub from '../icons/GitHub.astro'
 
-const {name,label,image,email,phone,location,summary} = basics
+const {name,label,image,email,phone,location,profiles,summary} = basics
 const {city,region,} = location
+
+const SocialIcons: Record<string,any> ={
+  GitHub,
+  LinkedIn
+  }
 
 ---
 
@@ -41,6 +48,22 @@ const {city,region,} = location
             📞 <!-- icono -->
           </a>
           )
+        }
+        {
+          profiles.map(({ network, username, url}) => {
+            const Icons = SocialIcons[network]
+
+            return(
+              <a
+               href={url}
+               title={`visitar el perfil de ${name} en ${network}`}
+               target="_blank"
+               rel="noopener noreferrer"
+              >
+               <Icons/>
+              </a> 
+            )
+          })
         }
         </footer>
       </div>
