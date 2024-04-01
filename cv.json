@@ -17,6 +17,11 @@
       "network": "LinkedIn",
       "username": "Juan Sánchez García",
       "url": "https://www.linkedin.com/in/juan-s%C3%A1nchez-garc%C3%ADa-898136248/"
+       },
+    {
+      "network": "GitHub",
+      "username": "juanszg",
+      "url": "https://github.com/juanszg"
     }]
   },
   "work": [{
@@ -25,7 +30,7 @@
     "url": "www.economicsales.com",
     "startDate": "2023/01/10",
     "endDate": "Actual",
-    "summary": "Desarrollo de la nueva pagina web de la empresa utlizando bootstrap, sass, y diseños propios elaborados por ilustrator y photoshop. Reparacion y mantenimiento a equipo de computo dañado, cambio de partes y soluciones especificas en software y hardware."
+    "summary": "Desarrollo de la nueva pagina web de la empresa utilizando HTML, CSS, bootstrap, sass y responsive web design, así como la implementación del nuevo blog en la página, elaborado con diseños propios hechos en Illustrator y Photoshop. Reparación y mantenimiento a equipo de cómputo dañado, cambio de partes y soluciones específicas en software y hardware."
 }],
   "volunteer": [{
     "organization": "IPN UPIICSA",
