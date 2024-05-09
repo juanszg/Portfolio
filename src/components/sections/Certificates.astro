@@ -1,0 +1,29 @@
+---
+import Section from '@/components/Section.astro';
+import {certificates} from "@cv";
+---
+<Section title="Certificados">
+    <ul>
+        {
+            certificates.map(({ name, date, issuer, url}) => {
+                /*const years = `${startDate} - ${endDate}`;*/
+
+                return (
+                    <li>
+                        <article>
+                            <header>
+                                <div>
+                                <h3>{name}</h3>
+                                <h4>{issuer}</h4>
+                                </div>
+                                
+                                <time>{date}</time>
+                            </header>
+                        </article>
+                    </li>
+                );
+            })
+        }
+    </ul>
+
+</Section>

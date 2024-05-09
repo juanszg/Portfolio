@@ -7,7 +7,7 @@ import { volunteer } from "@cv";
 <Section title="Experiencia">
     <ul>
         {
-            work.map(({ name, startDate, endDate, position, summary }) => {
+            work.map(({ name, startDate, endDate, position, summary,texto2}) => {
                 const startYear = new Date(startDate).getFullYear();
                 /* const endYear =
                     endDate !== null
@@ -29,6 +29,8 @@ import { volunteer } from "@cv";
 
                             <footer>
                                 <p>{summary}</p>
+                                <p>{texto2}</p>
+
                             </footer>
                         </article>
                     </li>

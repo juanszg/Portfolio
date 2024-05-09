@@ -1,17 +1,17 @@
 {
   "basics": {
     "name": "Juan Manuel Sánchez García",
-    "label": "Ing. Comunicaciones y Electronica",
+    "label": "Ing. Comunicaciones y Electrónica",
     "image": "https://avatars.githubusercontent.com/u/158105350?s=400&u=95cfdf64fd74490182dc9df3e0756f0c094d4901&v=4",
     "email": "juanszg772@gmail.com",
     "phone": "(+52) 55-1193-1691",
     "summary": "En constante búsqueda de oportunidades para expandir mis conocimientos y mantenerme actualizado en el campo de la ingeniería. Esperando aprender y trabajar en un entorno qu em permita desarrollarme personal y profesionalmente. Entusiasta del trabajo en equipo y a siempre dar lo mejor de mi en cada proyecto.",
     "location": {
-      "address": "Naucalpan de Juarez",
+      "address": "Naucalpan de Juárez",
       "postalCode": "53100",
-      "city": "Satelite",
+      "city": "Satélite",
       "countryCode": "MX",
-      "region": "Estado de Mexico"
+      "region": "Estado de México"
     },
     "profiles": [{
       "network": "LinkedIn",
@@ -30,18 +30,20 @@
     "url": "www.economicsales.com",
     "startDate": "2023/01/10",
     "endDate": "Actual",
-    "summary": "Desarrollo de la nueva pagina web de la empresa utilizando HTML, CSS, bootstrap, sass y responsive web design, así como la implementación del nuevo blog en la página, elaborado con diseños propios hechos en Illustrator y Photoshop. Reparación y mantenimiento a equipo de cómputo dañado, cambio de partes y soluciones específicas en software y hardware."
-}],
+    "summary":"Desarrollo de la nueva pagina web de la empresa utilizando HTML, CSS, bootstrap, SASS. Implemente una interfaz de usuario moderna y receptiva que garantiza una experiencia fluida en múltiples dispositivos y navegadores así como la implementación del nuevo blog en la página, elaborado con diseños propios hechos en Illustrator y Photoshop.",
+    "texto2":"Reparación y mantenimiento a equipo de cómputo dañado, cambio de partes y soluciones específicas en software y hardware."
+     }],
   "volunteer": [{
     "organization": "IPN UPIICSA",
-    "position": "Unidad de Informatica (servicio social)",
+    "position": "Unidad de Informatica ",
     "url": "https://www.upiicsa.ipn.mx/",
     "startDate": "2022/05/03",
     "endDate": "2022/11/03",
-    "summary": "Mantenimiento correctivo y preventido a equipos de computo (Software y Hardware). Instalcion del nuevo sistema de redes de la escuela. Cambio de piezas y reparacion de equipo dañado."
-  }],
+    "summary": "Mantenimiento correctivo y preventido a equipos de computo (Software y Hardware). Instalcion del nuevo sistema de redes de la escuela. Cambio de piezas y reparacion de equipo dañado.",
+    "texto2":""
+    }],
     "education": [{
-    "institution": "IPN - Escuela Superior de Ingeniería Mecánica y Eléctrica",
+    "institution": "IPN - Escuela Superior de Ingeniería Mecánica y Eléctrica (ESIME)",
     "url": "https://www.esimez.ipn.mx/",
     "area": "Ing. Comunicaciones y Electronica ",
     "startDate": "2016",
@@ -82,6 +84,12 @@
   },
   {
     "name": "Illustrator"
+  },
+  {
+    "name": "Astro"
+  },
+  {
+    "name": "Ingles B2"
   }
 
 ],
