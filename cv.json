@@ -9,9 +9,9 @@
     "location": {
       "address": "Naucalpan de Juárez",
       "postalCode": "53100",
-      "city": "Satélite",
+      "city": "Ciudad Satélite",
       "countryCode": "MX",
-      "region": "Estado de México"
+      "region": " Estado de México"
     },
     "profiles": [{
       "network": "LinkedIn",
@@ -30,7 +30,7 @@
     "url": "www.economicsales.com",
     "startDate": "2023/01/10",
     "endDate": "Actual",
-    "summary":"Desarrollo de la nueva pagina web de la empresa utilizando HTML, CSS, bootstrap, SASS. Implemente una interfaz de usuario moderna y receptiva que garantiza una experiencia fluida en múltiples dispositivos y navegadores así como la implementación del nuevo blog en la página, elaborado con diseños propios hechos en Illustrator y Photoshop.",
+    "summary":"Desarrollo de la nueva pagina web de la empresa utilizando HTML, CSS, bootstrap, SASS y el framework ASTRO. Implemente una interfaz de usuario moderna y receptiva que garantiza una experiencia fluida en múltiples dispositivos y navegadores así como la implementación del nuevo blog en la página, elaborado con diseños propios hechos en Illustrator y Photoshop.",
     "texto2":"Reparación y mantenimiento a equipo de cómputo dañado, cambio de partes y soluciones específicas en software y hardware."
      }],
   "volunteer": [{
@@ -58,6 +58,25 @@
     "issuer": "UDEMY",
     "url": "https://www.udemy.com/certificate/UC-bac6ad79-6eca-4d04-b51b-dd3f1a9b0602/"
   }],
+  "projects":[{
+    "name":"Economic Sales de México",
+     "description":"Pagina web de la empresa Economic Sales de México S.A de C.V, diseño responsivo, elaborada con Astro ",
+     "tecnologia":"HTML, CSS, Astro, JavaScript, Bootstrap, Figma",
+     "url":"https://www.economicsales.com"
+  },
+  {
+    "name":"Alfa Soluciones Contables",
+  "description":"Creacion y diseño de la pagina de la empresa de contaduria y soluciones contables ( ALFA ).",
+    "tecnologia":"HTML, CSS, Astro, JavaScript, Bootstrap, Figma",
+    "url":"https://alfacontable.netlify.app/"
+  },
+  {
+    "name":"Cocteles",
+    "description":"Catalogo de menu de cocteles elaborados en clase de gastronomia.",
+    "tecnologia":"HTML, CSS, Astro, JavaScript, Figma",
+      "url":"https://cocteles-gastro.netlify.app/"
+  }
+],
   "skills": [{
     "name": "HTML"
   },
