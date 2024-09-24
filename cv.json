@@ -30,15 +30,15 @@
     "url": "www.economicsales.com",
     "startDate": "2023/01/10",
     "endDate": "Actual",
-    "summary":"Desarrollo de la nueva pagina web de la empresa utilizando HTML, CSS, bootstrap, SASS y el framework ASTRO. Implemente una interfaz de usuario moderna y receptiva que garantiza una experiencia fluida en múltiples dispositivos y navegadores así como la implementación del nuevo blog en la página, elaborado con diseños propios hechos en Illustrator y Photoshop.",
+    "summary":"Desarrollo de la nueva pagina web de la empresa utilizando HTML, CSS, bootstrap, SASS y el framework Astro. Implemente una interfaz de usuario moderna y receptiva que garantiza una experiencia fluida en múltiples dispositivos y navegadores así como la implementación del nuevo blog en la página, elaborado con diseños propios hechos en Illustrator y Photoshop.",
     "texto2":"Reparación y mantenimiento a equipo de cómputo dañado, cambio de partes y soluciones específicas en software y hardware."
      }],
   "volunteer": [{
     "organization": "IPN UPIICSA",
     "position": "Unidad de Informatica ",
     "url": "https://www.upiicsa.ipn.mx/",
-    "startDate": "2022/05/03",
-    "endDate": "2022/11/03",
+    "startDate": "2022",
+    "endDate": "2023",
     "summary": "Mantenimiento correctivo y preventido a equipos de computo (Software y Hardware). Instalcion del nuevo sistema de redes de la escuela. Cambio de piezas y reparacion de equipo dañado.",
     "texto2":""
     }],
